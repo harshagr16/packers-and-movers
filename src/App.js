@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Assets/Styles/App.css";
+// import { Router, Route, Link, browserHistory, IndexRoute } from "react-router";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Fragment } from "react/cjs/react.development";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Feedback from "./Components/Feedback";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+        <Header></Header>
+        <Footer></Footer>
+        <Feedback></Feedback>
+    </Fragment>
   );
 }
 
