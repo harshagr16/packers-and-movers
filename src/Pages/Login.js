@@ -43,7 +43,7 @@ export default class Login extends Component {
                     />
                   </div>
                   <div className="text-center">
-                    <MDBBtn>Login</MDBBtn>
+                    <MDBBtn type="submit">Login</MDBBtn>
                   </div>
                 </form>
               </MDBCol>
