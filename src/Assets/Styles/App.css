@@ -67,6 +67,7 @@ color: rgba(255,255,255,.55);
 }
 .second-navbar a{
 color: white !important;
+margin-left: 5vh;
 }
 
 /* ========================drop down=============== */
@@ -175,6 +176,21 @@ color: white;
 }
 
 .signuppage{
-  margin: 30vh;
+  margin: 20vh;
   max-width: 50% !important;
+}
+.form-design{
+  border: 0;
+    box-shadow: 0 10px 15px 30px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    text-align: -webkit-center;
+}
+.form-outline .form-control{
+margin: 5vh;
+}
+.butn-signup{
+  padding: 5vh;
+}
+
+.grey-text{
+  width: 50%;
 }

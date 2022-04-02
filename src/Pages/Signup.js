@@ -22,9 +22,16 @@ export default class Signup extends Component {
           <MDBContainer>
             <MDBRow>
               <MDBCol md="12">
-                <form>
-                  <p className="h5 text-center mb-4">Sign Up</p>
+                <form className="form-design">
+                  <p className="h5 text-center pt-4 mb-4">Sign Up</p>
                   <div className="grey-text">
+                    <MDBInput
+                      label="Type your name"
+                      icon="lock"
+                      group
+                      type="text"
+                      validate
+                    />
                     <MDBInput
                       label="Type your email"
                       icon="envelope"
@@ -41,8 +48,22 @@ export default class Signup extends Component {
                       type="password"
                       validate
                     />
+                    <MDBInput
+                      label="Type your mobile"
+                      icon="lock"
+                      group
+                      type="text"
+                      validate
+                    />
+                    <MDBInput
+                      label="Type your address"
+                      icon="lock"
+                      group
+                      type="text"
+                      validate
+                    />
                   </div>
-                  <div className="text-center">
+                  <div className="text-center butn-signup">
                     <MDBBtn type="submit">SignUp</MDBBtn>
                   </div>
                 </form>

@@ -22,8 +22,8 @@ export default class Login extends Component {
           <MDBContainer>
             <MDBRow>
               <MDBCol md="12">
-                <form>
-                  <p className="h5 text-center mb-4">Login in</p>
+                <form className="form-design">
+                  <p className="h5 text-center pt-4 mb-4">Login in</p>
                   <div className="grey-text">
                     <MDBInput
                       label="Type your email"
@@ -42,7 +42,7 @@ export default class Login extends Component {
                       validate
                     />
                   </div>
-                  <div className="text-center">
+                  <div className="text-center butn-signup">
                     <MDBBtn type="submit">Login</MDBBtn>
                   </div>
                 </form>
