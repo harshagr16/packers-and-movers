@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Assets/Styles/App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Route } from "react-router-dom";
+import { Fragment } from "react/cjs/react.development";
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
+
+
+import AOS from 'aos';  // You can also use <link> for styles when net off
+import 'aos/dist/aos.css'; // You can also use <link> for styles when net off
+AOS.init();   // You can also use <link> for styles when net off
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/signup" component={Signup} />
+    </Fragment>
   );
 }
 
