@@ -5,6 +5,12 @@ import { Fragment } from "react/cjs/react.development";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
+import Faq from "./Pages/Faq";
+
+
+
 
 
 import AOS from 'aos';  // You can also use <link> for styles when net off
@@ -17,6 +23,9 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/signup" component={Signup} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/faq" component={Faq} />
     </Fragment>
   );
 }

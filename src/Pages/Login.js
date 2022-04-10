@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { Fragment } from "react/cjs/react.development";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
@@ -12,8 +12,12 @@ import {
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import {  Container } from "react-bootstrap";
 
-export default class Login extends Component {
-  render() {
+export default function Login(){
+  
+  useEffect(()=> {
+    document.title = "Login Page";
+  }, []);
+
     return (
       <Fragment>
         <Header></Header>
@@ -54,5 +58,5 @@ export default class Login extends Component {
         <Footer></Footer>
       </Fragment>
     );
-  }
+  
 }

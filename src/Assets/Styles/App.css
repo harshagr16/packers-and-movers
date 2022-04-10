@@ -3,13 +3,17 @@
 }
 
 .App-logo {
-  height: 10vmin;
-  pointer-events: none;
+  width: 15vh;
+  height: 10vh;
+}
+
+#root{
+  overflow: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
@@ -37,25 +41,53 @@
   }
 }
 
+.banner-size{
+  width: 100%;
+    height: 50vh;
+}
+
+
+
 
 .page-footer{
-  background-color: #0D6EFD;
-  position:relative;
-  bottom:0;
+  background-color: #1b1f3b;
+  /* position:relative;
+  bottom:0; */
   width:100%;
   color: rgba(255,255,255,.55);
+}
+
+.page-footer h5{
+  color: white;
+  font-size: 17px;
+}
+.page-footer .para-anch{
+  font-size: 14px;
 }
 .page-footer li a{
 text-decoration: none;
 color: rgba(255,255,255,.55);
 }
+.footer-copyright a{
+  color: white;
+}
+.social-media {
+color: white;
+font-size: 22px;
+}
+.icon-color-contact{
+  color: white;
+}
 .slider{
   width: 100%;
   height: 70vh;
 }
+.slider-div{
+  position: relative;
+}
 
 .first-navbar{
-  background-color: #bd090a;
+  background-color: #3755be;
 }
 .first-navbar a{
   text-decoration: none;
@@ -63,12 +95,12 @@ color: rgba(255,255,255,.55);
   margin-left: 5vh;
 }
 .second-navbar{
-
+background-color: #1b1f3b;
 }
 .second-navbar a{
 color: white !important;
-margin-left: 5vh;
 }
+
 
 /* ========================drop down=============== */
 
@@ -162,11 +194,11 @@ margin-left: 5vh;
 /* ======================================== */
 
 
-.card-fill .card{
+/* .card-fill .card{
   top: -20vh;
-}
+} */
 .card-fill .card .butn-color{
-background-color: #bd090a;
+background-color: #3755be;
 color: white;
 }
 
@@ -193,4 +225,117 @@ margin: 5vh;
 
 .grey-text{
   width: 50%;
+}
+.margin-top-bottom{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.container-fluid{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.about h2{
+color: #1b1f3b;
+font-weight: 700;
+text-decoration: underline;
+margin-top: 6vh;
+margin-bottom: 6vh;
+}
+
+.faq {
+  color: #1b1f3b;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  }
+  .accordion{
+    margin-bottom: 10vh;
+  }
+  .accordion-button:not(.collapsed){
+    color: #1b1f3b !important;
+    font-weight: 700;
+  }
+  .accordion-button{
+    color: #1b1f3b !important;
+    font-weight: 700;
+  }
+  .CountingNumber{
+    margin-top: 50px;
+    background-color: #1b1f3b;
+    color: white;
+    text-align: center;
+  }
+  .CountingNumber span{
+    color: white;
+    font-size: 35px;
+  }
+
+
+  .testimonial{
+    background-color: #1b1f3b;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .carousel-control-prev , .carousel-control-next{
+    display: none !important;
+  }
+
+
+  
+  .page-contact h5{
+    color: #1b1f3b;
+    font-size: 20px;
+  }
+  .page-contact .para-anch{
+    font-size: 20pxpx;
+  }
+  .page-contact .icon-color-contact{
+    color: #1b1f3b;
+    font-size: 20px;
+  }
+  
+  .card-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+text-align: left;
+  }
+.view:hover {
+-webkit-filter: brightness(60%);
+transition: all .6s ease-in-out;
+}
+.view{
+transition: all .6s ease-in-out;
+}
+
+  
+.overlay {
+
+}
+
+
+.company-history-banner1 {
+  height: 55vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.company-history-banner1 p {
+  border-top: 1px solid #d9a527;
+  border-bottom: 1px solid #d9a527;
+  padding: 30px 0px;
+  color: white;
+  display: flex;
+  line-height: 1.8em;
+}
+.company-history-banner1 i {
+  font-size: 40px;
+  color: white;
+  padding-right: 15px;
 }
