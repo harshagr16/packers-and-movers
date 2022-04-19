@@ -6,7 +6,7 @@ export default class Comp1 extends Component {
   render() {
     return (
       <Container className="margin-top-bottom">
-        <h1 className="text-center">Shiting Details</h1>
+        <h1 className="text-center">Shifting Details</h1>
         <Row>
           <Col>
             <Container className="card-fill">

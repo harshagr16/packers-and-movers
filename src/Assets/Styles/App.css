@@ -298,12 +298,7 @@ margin-bottom: 6vh;
     font-size: 20px;
   }
   
-  .card-title {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-text-align: left;
-  }
+
 .view:hover {
 -webkit-filter: brightness(60%);
 transition: all .6s ease-in-out;
@@ -339,3 +334,11 @@ transition: all .6s ease-in-out;
   color: white;
   padding-right: 15px;
 }
+
+/* 
+.card-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+text-align: left;
+} */

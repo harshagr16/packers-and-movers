@@ -25,7 +25,8 @@ export default function Signup() {
   const [password, setPassword] = useState("");
   const [mobile, setMobile] = useState("");
   const [address, setAddress] = useState("");
-  const register = { firstname, lastname, email, password, mobile, address };
+  const [username, setUsername] = useState("");
+  const register = { firstname, lastname, email, password, mobile, address,username };
 
   const handleform = (e) => {
     console.log(register);
@@ -85,6 +86,17 @@ export default function Signup() {
                     success="right"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <MDBInput
+                    label="Type your username"
+                    icon="envelope"
+                    group
+                    type="text"
+                    validate
+                    error="wrong"
+                    success="right"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                   />
                   <MDBInput
                     label="Type your password"
