@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Button, Card, Form, Row, Col } from "react-bootstrap";
 import { Fragment } from "react/cjs/react.development";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
@@ -26,7 +27,10 @@ export default function Signup() {
   const [mobile, setMobile] = useState("");
   const [address, setAddress] = useState("");
   const [username, setUsername] = useState("");
-  const register = { firstname, lastname, email, password, mobile, address,username };
+  const [role, setRole] = useState("");
+
+  
+  const register = { firstname, lastname, email, password, mobile, address,username,role };
 
   const handleform = (e) => {
     console.log(register);
@@ -34,8 +38,10 @@ export default function Signup() {
     e.preventDefault();
   };
 
+  // /orders/addorder
+
   const postData = (data) => {
-    axios.post(`${base_url}/register`, data).then(
+    axios.post(`${base_url}/users/signup`, data).then(
       (response) => {
         console.log(response);
         console.log("success");
@@ -125,6 +131,17 @@ export default function Signup() {
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
                   />
+                     <Form.Group as={Col} controlId="formGridState">
+                    <Form.Select
+                      value={role}
+                      onChange={(e) => setRole(e.target.value)}
+                      defaultValue="Choose..."
+                    >
+                      <option>Select Role</option>
+                      <option>ROLE_ADMIN</option>
+                      <option>ROLE_CLIENT</option>
+                    </Form.Select>
+                  </Form.Group>
                 </div>
                 <div className="text-center butn-signup">
                   <MDBBtn type="submit">SignUp</MDBBtn>

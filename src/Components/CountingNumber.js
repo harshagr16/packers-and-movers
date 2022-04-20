@@ -58,7 +58,7 @@ export default function CountingNumber() {
           <div data-aos="fade-up" class="row">
             <p>
               <i class="fas fa-quote-right"></i>
-              Packers & Movers is a reliable packing and moving company. It
+              ReloAdvicer is a reliable packing and moving company. It
               provides you reliable rehabilitation services, transport services,
               storage and warehousing services. Packers & Movers aims to meet
               customer expectations in a phased manner. So before moving to

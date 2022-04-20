@@ -19,10 +19,9 @@ export default function Login() {
     document.title = "Login Page";
   }, []);
 
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
-  const register = { email, password, username };
+  const register = { password, username };
 
   const handleform = (e) => {
     console.log(register);
@@ -31,7 +30,7 @@ export default function Login() {
   };
 
   const postData = (data) => {
-    axios.post(`${base_url}/signin`, data).then(
+    axios.post(`${base_url}/users/signin`, data).then(
       (response) => {
         console.log(response);
         console.log("success");
@@ -55,15 +54,15 @@ export default function Login() {
                 <p className="h5 text-center pt-4 mb-4">Login in</p>
                 <div className="grey-text">
                   <MDBInput
-                    label="Type your email"
+                    label="Type your UserName"
                     icon="envelope"
                     group
                     type="email"
                     validate
                     error="wrong"
                     success="right"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                   />
                   <MDBInput
                     label="Type your password"
@@ -74,17 +73,7 @@ export default function Login() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  <Form.Group as={Col} controlId="formGridState">
-                    <Form.Select
-                      value={username}
-                      onChange={(e) => setUsername(e.target.value)}
-                      defaultValue="Choose..."
-                    >
-                      <option>Choose</option>
-                      <option>ROLE_ADMIN</option>
-                      <option>ROLE_CLIENT</option>
-                    </Form.Select>
-                  </Form.Group>
+                 
                 </div>
                 <div className="text-center butn-signup">
                   <MDBBtn type="submit">Login</MDBBtn>

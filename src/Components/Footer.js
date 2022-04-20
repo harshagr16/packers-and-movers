@@ -121,7 +121,7 @@ export default function Footer() {
         <hr />
 
         <div className="footer-copyright text-center py-3">
-          <a href="/"> Packers & Movers </a>| @{date} All rights reserved
+          <a href="/"> ReloAdvicer </a>| @{date} All rights reserved
         </div>
       </footer>
     </div>
